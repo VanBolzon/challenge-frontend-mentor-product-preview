@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    /*Colors*/
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%,  48%);
+    --white: hsl(0, 0%, 100%);
+
+    /*Fonts*/
+    --font-primary: 'Montserrat';
+    --font-secondary: 'Fraunces';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-primary), sans-serif;
+}
+
+body p {
+    font-size: 14px;
+}
+
+.container {
+    width: 375px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.details {
+    padding: 1.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.image__mobile {
+    border-radius: 10px 10px 0 0;
+}
+
+.image__desktop {
+    display: none;
+}
+
+.title__secondary {
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: var(--dark-grayish-blue);
+    margin-bottom: .5rem;
+}
+
+.title__primary {
+    font-family: var(--font-secondary), serif;
+    font-size: 34px;
+    color: var(--very-dark-blue);
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: var(--dark-grayish-blue);
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    width: 95%;
+}
+
+.price {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.price__new {
+    font-family: var(--font-secondary), serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--dark-cyan);
+}
+
+.price__old {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: var(--dark-grayish-blue);
+}
+
+.cart {
+    text-decoration: none;
+    background-color: var(--dark-cyan);
+    display: flex;
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: 700;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cart::before {
+    content: url('../images/icon-cart.svg');
+}
+/*Attribution*/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
