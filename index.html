@@ -16,10 +16,11 @@
 <body>
 
   <main class="container">
-    <div class="image">
-      <img class="image__mobile" src="src/images/image-product-mobile.jpg" alt="Perfume Gabrielle CHANEL">
-      <img class="image__desktop" src="src/images/image-product-desktop.jpg" alt="Perfume Gabrielle CHANEL">
-    </div>
+    <picture>
+      <source srcset="src/images/image-product-desktop.jpg" media="(min-width: 700px)">
+
+      <img src="src/images/image-product-mobile.jpg" alt="Perfurm Gabrielle Essence">
+    </picture>
 
     <section class="details">
       <h2 class="title__secondary">PERFUME</h2>
